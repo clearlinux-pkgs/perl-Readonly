@@ -4,11 +4,11 @@
 #
 Name     : perl-Readonly
 Version  : 2.05
-Release  : 10
+Release  : 11
 URL      : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libr/libreadonly-perl/libreadonly-perl_2.050-1.debian.tar.xz
-Summary  : 'Facility for creating read-only scalars, arrays, hashes'
+Summary  : Facility for creating read-only scalars, arrays, hashes
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-2.0 GPL-1.0
 Requires: perl-Readonly-license = %{version}-%{release}
@@ -26,6 +26,7 @@ BuildRequires : perl(Module::Build::Tiny)
 Summary: dev components for the perl-Readonly package.
 Group: Development
 Provides: perl-Readonly-devel = %{version}-%{release}
+Requires: perl-Readonly = %{version}-%{release}
 
 %description dev
 dev components for the perl-Readonly package.
@@ -44,7 +45,7 @@ license components for the perl-Readonly package.
 cd ..
 %setup -q -T -D -n Readonly-2.05 -b 1
 mkdir -p deblicense/
-mv %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/Readonly-2.05/deblicense/
+cp -r %{_topdir}/BUILD/debian/* %{_topdir}/BUILD/Readonly-2.05/deblicense/
 
 %build
 export http_proxy=http://127.0.0.1:9/
