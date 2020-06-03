@@ -4,7 +4,7 @@
 #
 Name     : perl-Readonly
 Version  : 2.05
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libr/libreadonly-perl/libreadonly-perl_2.050-1.debian.tar.xz
@@ -100,4 +100,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/Readonly.pm
+/usr/lib/perl5/vendor_perl/5.30.3/Readonly.pm
