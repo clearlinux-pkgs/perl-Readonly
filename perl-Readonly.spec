@@ -4,7 +4,7 @@
 #
 Name     : perl-Readonly
 Version  : 2.05
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SA/SANKO/Readonly-2.05.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libr/libreadonly-perl/libreadonly-perl_2.050-1.debian.tar.xz
